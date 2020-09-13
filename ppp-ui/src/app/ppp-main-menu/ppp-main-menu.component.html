@@ -1,0 +1,14 @@
+<button mat-button [matMenuTriggerFor]="aboveMenu">About</button>
+<!-- #docregion menu-position -->
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <!-- #enddocregion menu-position -->
+  <button mat-menu-item (click)="navigateMenu('layout')">Show Layout</button>
+  <button mat-menu-item (click)="navigateMenu('svg')">About Us</button>
+</mat-menu>
+
+
+
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
